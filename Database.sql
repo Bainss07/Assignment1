@@ -1,0 +1,16 @@
+CREATE DATABASE student_db;
+USE student_db;
+
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) NOT NULL,
+    email VARCHAR(100) UNIQUE NOT NULL,
+    password VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE students (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    student_id VARCHAR(20) UNIQUE NOT NULL,
+    email VARCHAR(100) NOT NULL
+);
